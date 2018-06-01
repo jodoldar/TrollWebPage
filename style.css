@@ -1,0 +1,35 @@
+.parallax {
+	background-image: url('http://placekitten.com/600/200');
+	background-position: center-center;
+	background-attachment: fixed;
+	height: auto;
+}
+
+.parallax2 {
+	background-image: url('background.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center top;
+	width: 100%;
+}
+
+.clip {
+	-webkit-clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+	clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+}
+
+.marco {
+	position: fixed;
+	left: -80px;
+	z-index: 9;
+}
+
+@media (max-width: 600px) {
+	section {
+		background: white !important;
+	}
+
+	.clip {
+		clip-path: none;
+	}
+}
